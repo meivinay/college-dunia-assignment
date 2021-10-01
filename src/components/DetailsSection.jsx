@@ -43,8 +43,11 @@ let DetailsSection = (props) => {
 
     return (
       <div className="Left-Section">
+      <div className="left-section-container">
+      <div className = "college-info-container">
         <CollegeName />
 
+  <span>
 {
        [...Array(5)].map((value,index)=>{
          console.log("rating",college.rating)
@@ -57,12 +60,15 @@ let DetailsSection = (props) => {
         }
        })
 }
-
-        <div>
+       </span>
+</div>
+        <div className="location-container">
           <Location />
           <Distance />
         </div>
+        
         <OtherDetails />
+      </div>
         <Offer />
       </div>
     );
@@ -78,6 +84,7 @@ let DetailsSection = (props) => {
     let Discount = (props) => <span className="discount"> {college.discount} </span>;
     let DiscountedFess = (props) => {
       return (
+        
       <div class="discounted-fees"> 
           <span class="text-style-1">₹</span>{college.discounted_fees} </div>
           )}
@@ -98,8 +105,10 @@ let DetailsSection = (props) => {
         <OriginalFess />
         <Discount />
       </div>
+      <div class ="fees-container">
         <DiscountedFess />
         <FeesCycles />
+        </div>
         <Amenties />
       </div>
     );

@@ -6,8 +6,10 @@
   margin: 0;
   padding: 0;
 }
-
-.card-container{
+.material-icons-outlined{
+  font-size: 15px;
+}
+.card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -22,7 +24,7 @@
   padding: 0 0 0.625rem;
   border-radius: 3.8px;
   box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
-  border: solid 0.2px #444;
+  border: solid 0.2px #b1a5a5;
   background-color: var(--white-three);
   position: relative;
 }
@@ -78,278 +80,302 @@
   border-bottom-left-radius: 3.8px;
   border-bottom-right-radius: 3.8px;
 }
-.Details-Section{
-    display: flex;
-    height: 40%;
-    width: 100%;
-    align-items: flex-start;
+.Details-Section {
+  display: flex;
+  height: 40%;
+  width: 100%;
+  align-items: flex-start;
 }
 .Hansraj-College-Delhi-University {
-    width: 17.25rem;
-    height: 1.063rem;
-    margin: 1.125rem 0.688rem 0.188rem 1.063rem;
-    font-family: DINPro;
-    font-size: 1.156rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.97;
-    letter-spacing: normal;
-    text-align: center;
-    color: #444;
-  }
+  width: 17.25rem;
+  height: 1.063rem;
+  margin: 1.125rem 0.688rem 0.188rem 1.063rem;
+  font-family: DINPro;
+  font-size: 1.156rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444;
+}
 
 img {
   height: 100%;
   width: 100%;
+  filter: brightness(0.5);
 }
-.promoted{
+.promoted {
   position: absolute;
-    background: blue;
-    right: 6rem;
-    top: -8%;
-    height: 2rem;
-    width: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #6889ef;
+  right: -1px;
+  top: -7%;
+  text-align: center;
+  height: 2rem;
+  width: 10rem;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
+
+.promoted::before {
+  content: "PROMOTED";
+  position: absolute;
+  top: 6px;
+  left: 50px;
+  color: white;
+}
+
 #star-five {
-    margin: 50px 0;
-    position: relative;
-    display: block;
-    color: red;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
-    border-left: 100px solid transparent;
-    transform: rotate(35deg);
-  }
-  #star-five:before {
-    border-bottom: 80px solid red;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -45px;
-    left: -65px;
-    display: block;
-    content: '';
-    transform: rotate(-35deg);
-  }
-  #star-five:after {
-    position: absolute;
-    display: block;
-    color: red;
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
-    border-left: 100px solid transparent;
-    transform: rotate(-70deg);
-    content: '';
-  }
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+#star-five:before {
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+#star-five:after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+.location-container {
+  /* margin-top: 10px; */
+}
+.left-section-container {
+  height: 6rem;
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.Near-Vishwavidyalya-Metro-Station {
+  width: 12.25rem;
+  height: 0.813rem;
+  margin-left: 1.1rem;
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444;
+}
+.-Kms-away-from-bus-stand {
+  width: 9.813rem;
+  height: 0.813rem;
+  margin: 0.688rem 3.063rem 0.5rem 0.375rem;
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #adadad;
+}
+.-Match-25kms-from-GTB-Nagar-7-Kms-from-Rajiv-Chowk {
+  width: 25.375rem;
+  height: 0.813rem;
+  /* margin: 0.75rem 1.625rem -4.437rem 0.63rem; */
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #adadad;
+}
 
-  .Near-Vishwavidyalya-Metro-Station {
-    width: 12.25rem;
-    height: 0.813rem;
-    margin-left: 1.1rem;
-    font-family: DINPro;
-    font-size: 0.844rem;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: #444;
-  }
-  .-Kms-away-from-bus-stand {
-    width: 9.813rem;
-    height: 0.813rem;
-    margin: 0.688rem 3.063rem 0.5rem 0.375rem;
-    font-family: DINPro;
-    font-size: 0.844rem;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: #adadad;
-  }
-  .-Match-25kms-from-GTB-Nagar-7-Kms-from-Rajiv-Chowk {
-    width: 22.375rem;
-    height: 0.813rem;
-    margin: 0.75rem 1.625rem -4.437rem 0.63rem;
-    font-family: DINPro;
-    font-size: 0.844rem;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: #adadad;
-  }
-  
-  .-Match-25kms-from-GTB-Nagar-7-Kms-from-Rajiv-Chowk .text-style-1 {
-    font-weight: bold;
-    color: #37b396;
-  }
-  .text-style-1{
-    margin-left: 0.4rem;
-  }
-  .-Match-25kms-from-GTB-Nagar-7-Kms-from-Rajiv-Chowk .Text-Style-4 {
-    font-weight: bold;
-    color: #444;
-  }
-  .Text-Style-4{
-    margin-inline:0.1rem;
-  }
-  .Rectangle-4 {
-    width: 25.688rem;
-    height: 2.188rem;
-    margin: 0.563rem 5.313rem 0 0.063rem;
-    padding: 0.688rem 1.313rem 0.688rem 1.063rem;
-    background-color: #ccf5e7;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-  
-  }
-  .Rectangle-3 {
-    width: 4.688rem;
-    height: 3.313rem;
-    margin: 0 0 6.688rem 18.75rem;
-    border-radius: 3.8px;
-    background-color: #f5a626;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .discounted-fees {
-    width: 5.313rem;
-    height: 1.625rem;
-    margin: 1rem ;
+.-Match-25kms-from-GTB-Nagar-7-Kms-from-Rajiv-Chowk .text-style-1 {
+  font-weight: bold;
+  color: #37b396;
+}
+.text-style-1 {
+  margin-left: 0.4rem;
+}
+.-Match-25kms-from-GTB-Nagar-7-Kms-from-Rajiv-Chowk .Text-Style-4 {
+  font-weight: bold;
+  color: #444;
+}
+.Text-Style-4 {
+  margin-inline: 0.1rem;
+}
+.Rectangle-4 {
+  width: 25.688rem;
+  height: 2.188rem;
+  /* margin: 1.9rem 5.313rem 0 0.063rem; */
+  padding: 0.688rem 1.313rem 0.688rem 1.063rem;
+  background-color: #ccf5e7;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.Rectangle-3 {
+  width: 4.688rem;
+  height: 3.313rem;
+  margin: 0 0 6.688rem 18.75rem;
+  border-radius: 3.8px;
+  background-color: #f5a626;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fees-container{
 
-    font-family: DINPro;
-    font-size: 1.781rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.89;
-    letter-spacing: normal;
-    text-align: center;
-    color: #dd1c26;
-  }
-  .discounted-fees .text-style-1 {
-    font-family: MyriadPro;
-  }
-.Left-Section{
+}
+.discounted-fees {
+  width: 5.313rem;
+  height: 1.625rem;
+  padding-left: 3.2rem;
+  font-family: DINPro;
+  font-size: 1.781rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.89;
+  letter-spacing: normal;
+  text-align: center;
+  color: #dd1c26;
+  margin-top: 10px;
+}
+.discounted-fees .text-style-1 {
+  font-family: MyriadPro;
+}
+.Left-Section {
   width: 71%;
   height: 100%;
 }
-  .Right-Section{
-    width: 30%;
-    height: 100%;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-right: 1rem;
-  }
-  .discount{
-    background-color: red;
-    margin-left: 15px ;
-   margin-top: 1px;
-    position: relative;
-    border-top: 5px solid transparent;
-    border-right: 10px solid red;
-    border-bottom: 5px solid transparent;
-    text-align: center;
-  }
-  .discount::before{
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 10px solid red;
-    border-bottom: 15px solid transparent;
-  }
-  .discount::after{
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 5px;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 10;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -5px;
-  }
-
-  .Free-Cancellation {
-    display: block;
-
-    width: 6.313rem;
-    height: 0.625rem;
-    margin: 1.25rem 0.438rem 0.875rem 3.063rem;
-    font-family: DINPro;
-    font-size: 0.844rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: #37b396;
-  }
-.amenties{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 0;
+.Right-Section {
+  width: 30%;
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 1rem;
 }
-  .Free-Wi-Fi {
-    display: block;
-    width: 3.75rem;
-    height: 0.625rem;
-    margin: 1.25rem 1.688rem 0.875rem 0.438rem;
-    font-family: DINPro;
-    font-size: 0.844rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: #37b396;
-  }
+.discount {
+  background-color: red;
+  margin-left: 15px;
+  margin-top: 1px;
+  position: relative;
+  border-top: 5px solid transparent;
+  border-right: 10px solid red;
+  border-bottom: 5px solid transparent;
+  text-align: center;
+}
+.discount::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 10px solid red;
+  border-bottom: 15px solid transparent;
+}
+.discount::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5px;
+}
+.amenties {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
+  width: 13rem;
+}
 
-  .Per-Semester-3months {
-    width: 9.625rem;
-    height: 0.625rem;
-    margin: 0.188rem 1.688rem 1.313rem 7.625rem;
-    font-family: Myriad Pro;
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.64;
-    letter-spacing: normal;
-    text-align: center;
-    color: #444;
-  }
+.Free-Cancellation {
+  display: block;
+  width: 6.313rem;
+  height: 0.625rem;
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #37b396;
+}
+.Free-Wi-Fi {
+  display: block;
+  width: 3.75rem;
+  height: 0.625rem;
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #37b396;
+}
+
+.Per-Semester-3months {
+  width: 9.625rem;
+  font-family: Myriad Pro;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: normal;
+  text-align: center;
+  color: #726e6e;
+  padding-right: 5px;
+}
+
+.fees-container {
+  height: 3rem;
+  width: fit-content;
+  margin-right: 11px;;
+}
